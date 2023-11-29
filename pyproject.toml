@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pythonprojec-fastapi"
+version = "0.1.0"
+description = ""
+authors = ["30056687 <gosha_5@list.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.103.2"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+pydantic = {extras = ["email"], version = "^2.4.2"}
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.21"}
+aiosqlite = "^0.19.0"
+pydantic-settings = "^2.0.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+black = "^23.9.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
